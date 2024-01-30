@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Navbar.module.css" />
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+
+    <script type="module" src="Navbar.js"></script>
+    <script>
+      import Navbar from "./Navbar.js";
+
+      // Erstellen und Hinzufügen der Navbar-Komponente zum DOM
+      const navbarContainer = document.getElementById("navbarContainer");
+      navbarContainer.appendChild(Navbar());
+    </script>
+  </body>
+</html>
